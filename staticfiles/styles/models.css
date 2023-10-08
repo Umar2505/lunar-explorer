@@ -1,0 +1,37 @@
+.model {
+    position: relative;
+}
+
+#telescope {
+    width: 170px;
+    height: 250px;
+    position: absolute;
+    top: 380px;
+    right: -500px;
+    z-index: 0;
+}
+
+#stone {
+    width: 1000px;
+    height: 1000px;
+    z-index: -1;
+}
+
+#moon {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: -1100px;
+}
+
+#stone_box {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    z-index: -1;
+    top: 530px;
+    right: -900px;
+    display: flex;
+    overflow: hidden;
+    height: 200px;
+}

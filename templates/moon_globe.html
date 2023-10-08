@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive 3D Moon Globe</title>
+    <!-- Include Three.js from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Define CSS styles for the labels -->
+    <link rel="stylesheet" href="{% static 'styles/background.css' %}">
+    <style>
+        .seismometer-label {
+            position: absolute;
+            background-color: transparent;
+            color: white;
+            font-size: 60%;
+            pointer-events: none; /* Ensures labels do not block interaction with the 3D scene. */
+        }
+    </style>
+</head>
+<body>
+    <!-- Add a div element to hold the 3D moon globe -->
+    <div id="moonGlobeContainer"></div>
+    
+    <!-- Add a div element to hold the labels -->
+    <div id="label-container"></div>
+
+    <!-- Include your JavaScript file for 3D globe interaction -->
+    <script src="{% static 'moon_globe/js/moon_globe.js' %}"></script>
+    <script src="{% static 'moon_globe/js/moon_control.js' %}"></script>
+</body>
+</html>

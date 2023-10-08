@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1550px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    color: white;
+    z-index: 1;
+}
+
+#logo {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+#nav_links {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+#nav_link {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#main_box {
+    width:100%;
+    padding-top: 100px;
+    height: 300px;
+    display: flex;
+    
+}
+
+#project {
+    width: 100%;
+    height: 1000px;
+}
+
+#return {
+    background-color: transparent;
+    border: 0;
+}
